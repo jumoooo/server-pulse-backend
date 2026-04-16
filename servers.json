@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "id": "test-server",
+      "name": "Hypixel Public Server",
+      "type": "minecraft",
+      "host": "mc.hypixel.net",
+      "port": 25565,
+      "query": {
+        "enabled": true
+      }
+    }
+  ]
+}
