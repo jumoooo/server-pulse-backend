@@ -5,6 +5,8 @@
 
 ## 🤝 협업 규칙
 
+- 새 작업이나 새 변경 요청이 들어오면, 바로 구현 전에 **issue를 먼저 만들지 사용자에게 짧게 확인**해요.
+- 사용자가 승인하면 이 저장소에 issue를 만들고, 그 issue 기준으로 브랜치/커밋/PR를 진행해요.
 - backend 기능/버그 이슈, 브랜치, 커밋, PR는 **이 저장소에서** 진행해요.
 - root 운영 문서, handoff, gate, harness, `.cursor`, `.codex`, `.agents` 변경은 **[`jumoooo/server-pulse-root-ops`](https://github.com/jumoooo/server-pulse-root-ops)** 에서 진행해요.
 - frontend 소비 코드와 API 계약이 함께 바뀌면 **root parent issue + package child issue** 구조로 나눠서 처리해요.
