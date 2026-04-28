@@ -7,8 +7,10 @@
 
 ## 기본 규칙
 
-- 새 작업이나 새 변경 요청이 들어오면, 바로 구현에 들어가기 전에 **issue를 먼저 만들지 사용자에게 짧게 확인**해요.
-- 사용자가 승인하면 이 저장소에 issue를 만들고, 그 issue 기준으로 브랜치/커밋/PR를 진행해요.
+- 새 작업이라고 해서 항상 issue를 먼저 만들지는 않아요.
+- 버그, 기능, API 계약 변경, env 변경, cross-repo 작업처럼 **추적 가치가 큰 작업**이면 issue 생성을 먼저 제안해요.
+- 오타, 작은 문구 수정, 명백한 잡수정처럼 **소규모 단발 수정**은 issue 없이 바로 진행할 수 있어요.
+- issue가 필요한 작업이면 사용자에게 짧게 확인하고, 승인되면 이 저장소에 issue를 만든 뒤 브랜치/커밋/PR를 진행해요.
 - backend 기능, 버그, typecheck, test, `/health` 관련 작업은 **이 저장소에서** 이슈를 만들고 브랜치/커밋/PR를 진행해요.
 - root 운영 문서, handoff, gate, harness, `.cursor`, `.codex`, `.agents` 변경은 **`jumoooo/server-pulse-root-ops`** 에서 처리해요.
 - frontend 소비 코드와 함께 바뀌는 작업이면 **root parent issue + frontend child issue** 구조로 나눠서 진행해요.
