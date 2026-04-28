@@ -1,0 +1,36 @@
+name: "✨ Task / Feature"
+description: "backend 기능 작업 이슈"
+title: "[feat] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 작업 요약
+      description: 무엇을 만들거나 바꾸는지 적어주세요.
+      placeholder: 헬스 응답에 서버 상태 필드를 추가해요.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 배경
+      description: 왜 필요한지 적어주세요.
+      placeholder: frontend가 장애 원인을 더 빠르게 분기해야 해요.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 변경 범위
+      description: 라우트, 계약, env, 테스트 범위를 적어주세요.
+      placeholder: /health route, contract type, smoke test
+    validations:
+      required: true
+  - type: textarea
+    id: cross_repo
+    attributes:
+      label: 교차 저장소 영향
+      description: frontend/root 연계가 있으면 적어주세요.
+      placeholder: root parent issue 링크, frontend child issue 필요 여부, env 영향
