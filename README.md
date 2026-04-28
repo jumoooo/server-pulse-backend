@@ -14,6 +14,7 @@
 - frontend 소비 코드와 API 계약이 함께 바뀌면 **root parent issue + package child issue** 구조로 나눠서 처리해요.
 - 같은 저장소 이슈를 닫을 때는 `Closes #번호`를 쓰고, root 상위 이슈는 `Refs jumoooo/server-pulse-root-ops#번호`로 연결해요.
 - 교차 작업 PR에는 `port / CORS / env` 정합과 `/health` 확인 결과를 함께 남겨요.
+- 자세한 기준은 root 정본 문서 [`docs/REPOSITORY_WORKFLOW.md`](../docs/REPOSITORY_WORKFLOW.md)를 봐주세요.
 
 ## 빠른 시작
 
