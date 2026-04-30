@@ -25,19 +25,19 @@ pnpm dev
 
 ## 제공 기능
 
-| 영역 | 설명 |
-|---|---|
-| `/health` | 서버 상태 확인 |
-| `/api/steam/*` | Steam 관련 조회 |
-| `/api/servers/overview` | 전체 서버 상태 요약 |
-| `/api/servers/alert` | 이상 징후 서버 추출 |
-| `/api/servers/compare` | 서버 비교와 추천 |
-| `/api/servers/:id` | 단일 서버 상태 |
-| `/api/servers/:id/players` | 플레이어 목록 |
-| `/api/servers/:id/rules` | 서버 규칙 |
-| `/api/servers/:id/health` | 헬스 판정 |
-| `/api/servers/:id/diagnose` | 진단 정보 |
-| `/api/servers/:id/trend` | 플레이어 추이 |
+| 영역 | 엔드포인트 | frontend 연결 상태 |
+|---|---|---|
+| 헬스체크 | `/health` | ✅ 연결됨 (백엔드 가용 여부 확인) |
+| 전체 서버 요약 | `/api/servers/overview` | ✅ 연결됨 (대시보드) |
+| 단일 서버 헬스 | `/api/servers/:id/health` | ✅ 연결됨 (서버 상세 패널) |
+| 플레이어 추이 | `/api/servers/:id/trend` | ✅ 연결됨 (서버 상세 차트) |
+| 이상 서버 필터 | `/api/servers/alert` | ⏸ 미노출 (보류) |
+| 서버 비교 | `/api/servers/compare` | ⏸ 미노출 (보류) |
+| 단일 서버 쿼리 | `/api/servers/:id` | ⏸ 미노출 (보류) |
+| 플레이어 목록 | `/api/servers/:id/players` | ⏸ 미노출 (보류) |
+| 서버 규칙 | `/api/servers/:id/rules` | ⏸ 미노출 (보류) |
+| 진단 정보 | `/api/servers/:id/diagnose` | ⏸ 미노출 (보류) |
+| Steam API 전체 | `/api/steam/*` | ⏸ 미노출 (보류) |
 
 ## 환경 변수
 
@@ -127,4 +127,4 @@ pnpm dev
 
 - [backend/AGENTS.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\backend\AGENTS.md)
 - [root docs/REPOSITORY_WORKFLOW.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\docs\REPOSITORY_WORKFLOW.md)
-- [root docs/2026-04-29_현재-프로젝트-파악.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\docs\2026-04-29_현재-프로젝트-파악.md)
+- [root docs/2026-04-29_프로젝트-현황-점검/현재-프로젝트-파악.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\docs\2026-04-29_프로젝트-현황-점검\현재-프로젝트-파악.md)
