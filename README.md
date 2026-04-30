@@ -55,9 +55,25 @@ pnpm start
 # 터미널 A — 백엔드 (이 레포)
 pnpm dev   # http://localhost:4000
 
-# 터미널 B — 프론트엔드 (new_pj)
-cd ../new_pj && pnpm dev   # http://localhost:3000
+# 터미널 B — 프론트엔드 (server-pulse)
+cd ../server-pulse && pnpm dev   # http://localhost:3000
 ```
+
+## 제공 기능
+
+| 영역 | 엔드포인트 | frontend 연결 상태 |
+|---|---|---|
+| 헬스체크 | `/health` | ✅ 연결됨 (백엔드 가용 여부 확인) |
+| 전체 서버 요약 | `/api/servers/overview` | ✅ 연결됨 (대시보드) |
+| 단일 서버 헬스 | `/api/servers/:id/health` | ✅ 연결됨 (서버 상세 패널) |
+| 플레이어 추이 | `/api/servers/:id/trend` | ✅ 연결됨 (서버 상세 차트) |
+| 이상 서버 필터 | `/api/servers/alert` | ⏸ 미노출 (보류) |
+| 서버 비교 | `/api/servers/compare` | ⏸ 미노출 (보류) |
+| 단일 서버 쿼리 | `/api/servers/:id` | ⏸ 미노출 (보류) |
+| 플레이어 목록 | `/api/servers/:id/players` | ⏸ 미노출 (보류) |
+| 서버 규칙 | `/api/servers/:id/rules` | ⏸ 미노출 (보류) |
+| 진단 정보 | `/api/servers/:id/diagnose` | ⏸ 미노출 (보류) |
+| Steam API 전체 | `/api/steam/*` | ⏸ 미노출 (보류) |
 
 ## 엔드포인트
 
@@ -151,3 +167,16 @@ src/
 
 - 트렌드 히스토리는 인메모리(`Map`)로 유지됩니다.
 - 백엔드 프로세스를 재시작하면 `/api/servers/:id/trend` 히스토리가 초기화됩니다.
+- `STEAM_API_KEY`가 필요한 엔드포인트는 키가 없으면 정상 동작하지 않아요.
+
+## 협업 메모
+
+- backend 기능/버그/API/env 변경은 이 저장소에서 다뤄요.
+- root 운영 문서와 agentic 자산은 root 저장소 책임이에요.
+- frontend 소비 코드와 같이 바뀌는 변경은 cross-repo 작업으로 관리하는 게 좋아요.
+
+자세한 기준:
+
+- [backend/AGENTS.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\backend\AGENTS.md)
+- [root docs/REPOSITORY_WORKFLOW.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\docs\REPOSITORY_WORKFLOW.md)
+- [root docs/2026-04-29_프로젝트-현황-점검/현재-프로젝트-파악.md](E:\MY_PROJECTS\NEXT_PROJECT\server-pulse\docs\2026-04-29_프로젝트-현황-점검\현재-프로젝트-파악.md)
