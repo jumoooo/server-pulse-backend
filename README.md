@@ -34,9 +34,9 @@ pnpm dev
 | 이상 서버 필터 | `/api/servers/alert` | ⏸ 미노출 (보류) |
 | 서버 비교 | `/api/servers/compare` | ⏸ 미노출 (보류) |
 | 단일 서버 쿼리 | `/api/servers/:id` | ⏸ 미노출 (보류) |
-| 플레이어 목록 | `/api/servers/:id/players` | ⏸ 미노출 (보류) |
+| 플레이어 목록 | `/api/servers/:id/players` | ✅ 연결됨 (서버 상세 플레이어 목록) |
 | 서버 규칙 | `/api/servers/:id/rules` | ⏸ 미노출 (보류) |
-| 진단 정보 | `/api/servers/:id/diagnose` | ⏸ 미노출 (보류) |
+| 진단 정보 | `/api/servers/:id/diagnose` | ✅ 연결됨 (서버 상세 진단 패널) |
 | Steam API 전체 | `/api/steam/*` | ⏸ 미노출 (보류) |
 
 ## 환경 변수
